@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
           renderer: 'svg',
           loop: false,
           autoplay: false,
-          path: '/assets/lottie/glowing-line.json',
+          path: 'assets/lottie/glowing-line.json',
           rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
           }
