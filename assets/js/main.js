@@ -8,14 +8,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ========== LENIS (плавный скролл) ==========
-  const lenis = new Lenis({
-    duration: 1.2,    // было 1.4 — уменьшаем для отзывчивости
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -8 * t)),  // более резкий финиш
-    smoothWheel: true,
-    wheelMultiplier: 1,          // чувствительность колеса
-    touchMultiplier: 2,          // на тачпадах чуть быстрее
-    infinite: false,
-  });
+const lenis = new Lenis({
+  lerp: 0.08,            // ОЧЕНЬ быстрый отклик (0.1 — стандарт, 0.07 — ещё резвее)
+  wheelMultiplier: 1.2,  // чуть ускоряем колёсико
+  touchMultiplier: 2.5,  // тачпад быстрее
+  smoothWheel: true,     // обязательно
+  smoothTouch: true,     // для телефонов
+  direction: 'vertical',
+  gestureDirection: 'vertical',
+});
   // Внутри того же DOMContentLoaded, после создания lenis:
 window.addEventListener('wheel', (e) => {
   // Если пользователь крутит очень быстро — отдаём управление нативному скроллу на долю секунды
