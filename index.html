@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Потолки35 | Премиальные натяжные потолки</title>
+  <meta name="description" content="Элегантные натяжные потолки: сатин, глянец, фотопечать. Бесплатный замер. Установка за 1 день.">
+  <meta name="theme-color" content="#ffffff">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Потолки35 – натяжные потолки, которые вдохновляют">
+  <meta property="og:description" content="Роскошь, доступная каждому. Более 200 фактур.">
+  <meta property="og:image" content="/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://ваш-сайт.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Критический CSS (инлайновый, чтобы не блокировать рендер) -->
+  <style>
+    /* минимальный сброс и стили для первого экрана */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Open Sans',sans-serif;color:#2c3e50;background:#f5f7fa;overflow-x:hidden}
+    .hero{position:relative;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#000}
+    .hero__bg{position:absolute;inset:0;background:center/cover no-repeat;clip-path:polygon(0 100%,100% 0,100% 0,0 100%)}
+    .hero__content{position:relative;z-index:2;text-align:center;color:#fff;opacity:0}
+    .cursor{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;mix-blend-mode:difference;display:none}
+    @media (hover:hover) and (pointer:fine){body{cursor:none}.cursor{display:block}}
+  </style>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <!-- Кастомный курсор -->
+  <div class="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__trail"></div>
+  </div>
+
+  <!-- Хедер -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="/" class="logo" aria-label="Потолки35">
+        <!-- SVG логотипа проявится через JS, пока заглушка -->
+        <img src="/assets/img/ui/logo.svg" alt="Потолки35" width="140" height="40">
+      </a>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a href="#catalog" class="nav__link">Фактуры</a></li>
+        <li class="nav__item"><a href="#calculator" class="nav__link">Калькулятор</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Работы</a></li>
+        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+      <button class="burger" aria-label="Меню" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero-секция -->
+    <section class="hero" id="hero">
+      <video class="hero__bg-video" autoplay muted loop playsinline poster="/assets/img/hero/poster.jpg">
+        <source src="/assets/video/installation.webm" type="video/webm">
+        <source src="/assets/video/installation.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__line" id="lottie-line"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">Идеальный потолок<br>начинается с мечты</h1>
+        <p class="hero__subtitle">Премиальные натяжные конструкции с душой и гарантией</p>
+        <a href="#calculator" class="btn btn--glow">Рассчитать стоимость</a>
+      </div>
+    </section>
+
+    <!-- Каталог фактур -->
+    <section class="catalog section" id="catalog">
+      <div class="container">
+        <h2 class="section-title fade-blur">Фактуры, которые вдохновляют</h2>
+        <div class="catalog__grid">
+          <article class="texture-card" data-tilt data-texture="satin">
+            <div class="texture-card__image">
+              <img src="/assets/img/textures/satin.jpg" alt="Сатин" loading="lazy" width="400" height="300">
+            </div>
+            <h3 class="texture-card__title">Сатин</h3>
+            <p class="texture-card__desc">Благородная матовость с лёгким перламутровым отливом</p>
+          </article>
+          <article class="texture-card" data-tilt data-texture="gloss">
+            <div class="texture-card__image">
+              <img src="/assets/img/textures/gloss.jpg" alt="Глянец" loading="lazy" width="400" height="300">
+            </div>
+            <h3 class="texture-card__title">Глянец</h3>
+            <p class="texture-card__desc">Зеркальное сияние, расширяющее пространство</p>
+          </article>
+          <article class="texture-card" data-tilt data-texture="fabric">
+            <div class="texture-card__image">
+              <img src="/assets/img/textures/fabric.jpg" alt="Тканевый" loading="lazy" width="400" height="300">
+            </div>
+            <h3 class="texture-card__title">Тканевый</h3>
+            <p class="texture-card__desc">Экологичный «дышащий» материал без швов</p>
+          </article>
+          <article class="texture-card" data-tilt data-texture="photo">
+            <div class="texture-card__image">
+              <img src="/assets/img/textures/photo.jpg" alt="Фотопечать" loading="lazy" width="400" height="300">
+            </div>
+            <h3 class="texture-card__title">Фотопечать</h3>
+            <p class="texture-card__desc">Любое изображение на полотне в высоком разрешении</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section class="calculator section" id="calculator">
+      <div class="container">
+        <h2 class="section-title fade-blur">Калькулятор стоимости</h2>
+        <div class="calculator__wrapper">
+          <div class="calculator__form">
+            <div class="input-group">
+              <label for="width">Ширина (м)</label>
+              <input type="number" id="width" min="1" max="20" step="0.1" value="3.5">
+            </div>
+            <div class="input-group">
+              <label for="length">Длина (м)</label>
+              <input type="number" id="length" min="1" max="30" step="0.1" value="4.0">
+            </div>
+            <div class="input-group">
+              <label for="texture">Фактура</label>
+              <select id="texture">
+                <option value="satin">Сатин</option>
+                <option value="gloss">Глянец</option>
+                <option value="fabric">Тканевый</option>
+                <option value="photo">Фотопечать</option>
+              </select>
+            </div>
+            <fieldset class="extras">
+              <legend>Дополнительные работы</legend>
+              <label><input type="checkbox" name="extra" value="light"> Встройка светильников</label>
+              <label><input type="checkbox" name="extra" value="curve"> Криволинейный участок</label>
+              <label><input type="checkbox" name="extra" value="cornice"> Теневой карниз</label>
+            </fieldset>
+          </div>
+          <div class="calculator__result">
+            <p class="calculator__price-label">Примерная стоимость:</p>
+            <div class="calculator__price" id="price-display">
+              <span id="price-value">56 000</span> ₽
+            </div>
+            <button class="btn btn--glow">Оставить заявку</button>
+          </div>
+          <!-- Lottie-фон калькулятора -->
+          <div id="calculator-lottie" class="calculator__bg-lottie"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Портфолио (до/после) -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <h2 class="section-title fade-blur">Наши работы: до и после</h2>
+        <div class="comparison-slider">
+          <div class="comparison-item">
+            <div class="comparison" data-comparison>
+              <img src="/assets/img/portfolio/before-1.jpg" alt="До ремонта" class="comp-before" loading="lazy">
+              <img src="/assets/img/portfolio/after-1.jpg" alt="После установки потолка" class="comp-after" loading="lazy">
+              <input type="range" min="0" max="100" value="50" class="comp-slider" aria-label="Ползунок сравнения">
+              <div class="comp-handle"></div>
+            </div>
+          </div>
+          <!-- Дублируем для второго примера, если нужно -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества с морфингом иконок -->
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <h2 class="section-title fade-blur">Почему выбирают нас</h2>
+        <div class="advantages__grid">
+          <div class="advantage fade-blur" data-lottie-icon="icon-morph-1">
+            <div class="advantage__lottie"></div>
+            <h3>Установка за 1 день</h3>
+            <p>От замера до идеального потолка — всего 24 часа</p>
+          </div>
+          <!-- Добавь ещё 4-5 преимуществ по аналогии -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы (карусель) -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="section-title fade-blur">Отзывы клиентов</h2>
+        <div class="swiper reviews-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review">
+              <p class="review__text">«Потолки35 — это настоящее искусство! Сатиновое полотно преобразило гостиную.»</p>
+              <cite class="review__author">— Анна, г. Вологда</cite>
+            </div>
+            <!-- ещё слайды -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Схема работы -->
+    <section class="steps section" id="steps">
+      <div class="container">
+        <h2 class="section-title fade-blur">Как мы работаем</h2>
+        <div class="steps__timeline">
+          <!-- 4-5 шагов с иконками и описанием -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <h2 class="section-title fade-blur">Свяжитесь с нами</h2>
+        <div class="contacts__grid">
+          <div class="contacts__form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="input-group floating">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="input-group floating">
+                <input type="tel" id="phone" name="phone" required placeholder=" ">
+                <label for="phone">Телефон</label>
+              </div>
+              <div class="input-group floating">
+                <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+                <label for="message">Сообщение</label>
+              </div>
+              <button type="submit" class="btn btn--glow">Отправить</button>
+            </form>
+          </div>
+          <div class="contacts__info">
+            <p>📍 г. Вологда, ул. Примерная, 1</p>
+            <a href="tel:+79957886668" class="contacts__phone">+7 (995) 788-66-68</a>
+            <div class="messengers">
+              <a href="https://t.me/yourbot" target="_blank" rel="noopener" class="btn btn--outline">Telegram</a>
+              <a href="https://wa.me/70000000000" target="_blank" rel="noopener" class="btn btn--outline">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Потолки35, 2025. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Скрипты (defer для не-критичных) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+
+  <!-- Собственные скрипты -->
+  <script src="/assets/js/cursor.js" defer></script>
+  <script src="/assets/js/hero.js" defer></script>
+  <script src="/assets/js/calculator.js" defer></script>
+  <script src="/assets/js/comparison.js" defer></script>
+  <script src="/assets/js/form.js" defer></script>
+  <script src="/assets/js/micro.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
