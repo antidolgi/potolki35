@@ -9,10 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ========== LENIS (плавный скролл) ==========
   const lenis = new Lenis({
-    duration: 1.4,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    duration: 1.2,    // было 1.4 — уменьшаем для отзывчивости
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -8 * t)),  // более резкий финиш
     smoothWheel: true,
+    wheelMultiplier: 1,          // чувствительность колеса
+    touchMultiplier: 2,          // на тачпадах чуть быстрее
+    infinite: false,
   });
+  // Внутри того же DOMContentLoaded, после создания lenis:
+window.addEventListener('wheel', (e) => {
+  // Если пользователь крутит очень быстро — отдаём управление нативному скроллу на долю секунды
+  if (Math.abs(e.deltaY) > 100) {
+    lenis.stop();
+    setTimeout(() => lenis.start(), 50);
+  }
+}, { passive: true });
 
   // Интеграция с GSAP ScrollTrigger
   lenis.on('scroll', ScrollTrigger.update);
