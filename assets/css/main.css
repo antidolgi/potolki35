@@ -793,6 +793,16 @@ h2 {
   transform: translate(-50%, -50%);
   transition: transform 0.08s linear;
 }
+/* В .cursor__dot и .cursor__trail можно менять размеры */
+.cursor--hover .cursor__dot {
+  transform: translate(-50%, -50%) scale(1.8);
+  background: var(--color-accent-gold);
+}
+.cursor--hover .cursor__trail {
+  width: 35px;
+  height: 35px;
+  border-color: var(--color-accent-gold);
+}
 
 /* ===========================
    MEDIA QUERIES
