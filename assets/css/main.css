@@ -207,6 +207,21 @@ h2 {
   transition: 0.3s;
 }
 
+/* ====FORM TG============== */
+.form-status {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  min-height: 1.5em;
+}
+.form-status--success {
+  color: #2e7d32;
+}
+.form-status--error {
+  color: #c62828;
+}
+
 /* ===========================
    BUTTONS
    =========================== */
