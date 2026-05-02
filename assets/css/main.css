@@ -877,3 +877,25 @@ h2 {
     aspect-ratio: 3/4;
   }
 }
+/* Лупа для карточек фактур */
+.texture-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.texture-lens {
+  display: none;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent-gold);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3), 0 0 0 6px rgba(255,255,255,0.3);
+  pointer-events: none;
+  z-index: 5;
+  background-repeat: no-repeat;
+}
+.contacts__form-wrapper {
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
