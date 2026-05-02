@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: '/assets/lottie/calculator-bg.json',
+      path: 'assets/lottie/calculator-bg.json',
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
