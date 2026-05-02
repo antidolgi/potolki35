@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
               renderer: 'svg',
               loop: false,
               autoplay: true,
-              path: `/assets/lottie/${iconSrc}.json`,
+              path: `assets/lottie/${iconSrc}.json`,
             });
             container.dataset.lottieInited = 'true';
           }
