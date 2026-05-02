@@ -10,14 +10,14 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Потолки35 – натяжные потолки, которые вдохновляют">
   <meta property="og:description" content="Роскошь, доступная каждому. Более 200 фактур.">
-  <meta property="og:image" content="/assets/img/og-image.jpg">
+  <meta property="og:image" content="assets/img/og-image.jpg">
   <meta property="og:url" content="https://ваш-сайт.github.io">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" href="/assets/img/favicon/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
 
   <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
     .cursor{position:fixed;top:0;left:0;pointer-events:none;z-index:9999;mix-blend-mode:difference;display:none}
     @media (hover:hover) and (pointer:fine){body{cursor:none}.cursor{display:block}}
   </style>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
@@ -50,7 +50,7 @@
     <nav class="nav container">
       <a href="/" class="logo" aria-label="Потолки35">
         <!-- SVG логотипа проявится через JS, пока заглушка -->
-        <img src="/assets/img/ui/logo.svg" alt="Потолки35" width="140" height="40">
+        <img src="assets/img/ui/logo.svg" alt="Потолки35" width="140" height="40">
       </a>
       <ul class="nav__list" id="nav-list">
         <li class="nav__item"><a href="#catalog" class="nav__link">Фактуры</a></li>
@@ -68,9 +68,9 @@
   <main>
     <!-- Hero-секция -->
     <section class="hero" id="hero">
-      <video class="hero__bg-video" autoplay muted loop playsinline poster="/assets/img/hero/poster.jpg">
-        <source src="/assets/video/installation.webm" type="video/webm">
-        <source src="/assets/video/installation.mp4" type="video/mp4">
+      <video class="hero__bg-video" autoplay muted loop playsinline poster="assets/img/hero/poster.jpg">
+        <source src="assets/video/installation.webm" type="video/webm">
+        <source src="assets/video/installation.mp4" type="video/mp4">
       </video>
       <div class="hero__overlay"></div>
       <div class="hero__line" id="lottie-line"></div>
@@ -88,28 +88,28 @@
         <div class="catalog__grid">
           <article class="texture-card" data-tilt data-texture="satin">
             <div class="texture-card__image">
-              <img src="/assets/img/textures/satin.jpg" alt="Сатин" loading="lazy" width="400" height="300">
+              <img src="assets/img/textures/satin.jpg" alt="Сатин" loading="lazy" width="400" height="300">
             </div>
             <h3 class="texture-card__title">Сатин</h3>
             <p class="texture-card__desc">Благородная матовость с лёгким перламутровым отливом</p>
           </article>
           <article class="texture-card" data-tilt data-texture="gloss">
             <div class="texture-card__image">
-              <img src="/assets/img/textures/gloss.jpg" alt="Глянец" loading="lazy" width="400" height="300">
+              <img src="assets/img/textures/gloss.jpg" alt="Глянец" loading="lazy" width="400" height="300">
             </div>
             <h3 class="texture-card__title">Глянец</h3>
             <p class="texture-card__desc">Зеркальное сияние, расширяющее пространство</p>
           </article>
           <article class="texture-card" data-tilt data-texture="fabric">
             <div class="texture-card__image">
-              <img src="/assets/img/textures/fabric.jpg" alt="Тканевый" loading="lazy" width="400" height="300">
+              <img src="assets/img/textures/fabric.jpg" alt="Тканевый" loading="lazy" width="400" height="300">
             </div>
             <h3 class="texture-card__title">Тканевый</h3>
             <p class="texture-card__desc">Экологичный «дышащий» материал без швов</p>
           </article>
           <article class="texture-card" data-tilt data-texture="photo">
             <div class="texture-card__image">
-              <img src="/assets/img/textures/photo.jpg" alt="Фотопечать" loading="lazy" width="400" height="300">
+              <img src="assets/img/textures/photo.jpg" alt="Фотопечать" loading="lazy" width="400" height="300">
             </div>
             <h3 class="texture-card__title">Фотопечать</h3>
             <p class="texture-card__desc">Любое изображение на полотне в высоком разрешении</p>
@@ -168,8 +168,8 @@
         <div class="comparison-slider">
           <div class="comparison-item">
             <div class="comparison" data-comparison>
-              <img src="/assets/img/portfolio/before-1.jpg" alt="До ремонта" class="comp-before" loading="lazy">
-              <img src="/assets/img/portfolio/after-1.jpg" alt="После установки потолка" class="comp-after" loading="lazy">
+              <img src="assets/img/portfolio/before-1.jpg" alt="До ремонта" class="comp-before" loading="lazy">
+              <img src="assets/img/portfolio/after-1.jpg" alt="После установки потолка" class="comp-after" loading="lazy">
               <input type="range" min="0" max="100" value="50" class="comp-slider" aria-label="Ползунок сравнения">
               <div class="comp-handle"></div>
             </div>
@@ -272,12 +272,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
 
   <!-- Собственные скрипты -->
-  <script src="/assets/js/cursor.js" defer></script>
-  <script src="/assets/js/hero.js" defer></script>
-  <script src="/assets/js/calculator.js" defer></script>
-  <script src="/assets/js/comparison.js" defer></script>
-  <script src="/assets/js/form.js" defer></script>
-  <script src="/assets/js/micro.js" defer></script>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="assets/js/cursor.js" defer></script>
+  <script src="assets/js/hero.js" defer></script>
+  <script src="assets/js/calculator.js" defer></script>
+  <script src="assets/js/comparison.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+  <script src="assets/js/micro.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
